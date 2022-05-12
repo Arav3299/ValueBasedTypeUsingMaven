@@ -8,7 +8,7 @@ public class UserSession {
 
 	public static Session getSession() {
 		Configuration cfg = new Configuration();
-		cfg.configure("empuprsav.cfg.xml");
+		cfg.configure("emp.cfg.xml");
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = factory.openSession();
 		return session;
